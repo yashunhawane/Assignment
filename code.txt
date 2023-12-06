@@ -1,0 +1,59 @@
+interface Data {
+  department: string;
+  sub_departments: string[];
+}
+
+const data: Data[] = [
+  {
+    department: "customer_service",
+    sub_departments: ["support", "customer_success"],
+  },
+  {
+    department: "design",
+    sub_departments: ["graphic_design", "product_design", "web_design"],
+  },
+  {
+    department: "engineering",
+    sub_departments: [
+      "software_engineering",
+      "hardware_engineering",
+      "quality_assurance",
+    ],
+  },
+  {
+    department: "marketing",
+    sub_departments: ["digital_marketing", "content_marketing", "events"],
+  },
+];
+
+
+ const handleChange2 = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setChecked([event.target.checked, checked[1]]);
+  };
+
+  const handleChange3 = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setChecked([checked[0], event.target.checked]);
+  };
+
+
+
+   {
+ customer_service
+ -support 
+ -customer_success
+ 
+design
+-graphic_design 
+-product_design
+-web_design
+ 
+ engineering
+-software_engineering
+-hardware_engineering
+-quality_assurance
+
+marketing
+-digital_marketing
+-content_marketing
+-events
+  
